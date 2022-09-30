@@ -140,7 +140,8 @@ export enum PurchaseProductTypes {
     routePurchase       = 'routePurchase',
     marketPlaceProduct  = 'marketplaceProduct',
     mintbaseThing       = 'mintbaseThing',
-    nftThing            = 'nftThing'
+    nftThing            = 'nftThing',
+    flickIt             = 'flickIt'
 }
   
 export interface CreatePaymentIntentResponse {

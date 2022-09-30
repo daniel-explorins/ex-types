@@ -16,7 +16,7 @@ export interface Model3D {
     authorName?: string;
     subtitle?: string;
     description?: string;
-    srcUrl:string;
+    srcUrl:string | null;
     minimalSrcUrl?: string;
     iosSrcUrl?: string;
     posterImageUrl?:string;

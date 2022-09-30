@@ -1,3 +1,4 @@
+import { Model3D } from '..';
 import { UpdateFileRequest, UpdateFileConfirm, UpdateFileResponse, ImageFileType } from './Common';
 
 export interface CreateMediaRequest extends UpdateFileRequest {
@@ -34,6 +35,21 @@ export interface MediaItem {
     url: string;
     order?: number;
     safeUrl?: any;
+}
+
+export interface MultiMediaCollection {
+    name: string,
+    mediaItems: MultiMediaItem[],
+    id?: string,
+}
+
+export interface MultiMediaItem {
+    audioUrl?: string;
+    imgUrl?: string;
+    model3D?: Model3D;
+    artist?: string;
+    description?: string;
+    name?: string
 }
 
 export interface MarkerIcon {
