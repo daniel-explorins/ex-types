@@ -80,9 +80,11 @@ export interface RouteAction {
     groupGame?: string
 }
 
+export type MilestoneType = 'isVisited' | 'isPhysicalVisited' | 'isQuizSolved' | 'quizReply' | 'isRewardReceived'
+
 export interface RouteLevel {
     id: number,
-    milestone: string,
+    milestone: MilestoneType,
     benchmark: number,
     title: string,
     subtitle?: string, 
@@ -92,7 +94,7 @@ export interface RouteLevel {
 
 export interface ReachNextLevelRequest {
     levelId: number,
-    milestone: string,
+    milestone: MilestoneType
     benchmark: number,
     raffleId?: number
 }
@@ -116,7 +118,7 @@ export interface RaffleTicket {
     user?: User,
     route?: RouteObject,
     isRaffleTCAccepted: boolean,
-}
+} 
 
 export interface UserRaffleTicketUpdateRequest {
     isRaffleTCAccepted: boolean
