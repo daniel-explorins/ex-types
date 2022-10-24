@@ -31,7 +31,8 @@ export interface Model3D {
     rotation?: string // ej. '0 180 0'
     marketplaceUrl?: string,
     token?: TokenInfo,
-    metadata?: any
+    metadata?: any,
+    print3dPaymentLinkUrl?: string,
 }
 
 export interface TokenInfo {

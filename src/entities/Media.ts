@@ -44,6 +44,7 @@ export interface MultiMediaCollection {
 }
 
 export interface MultiMediaItem {
+    id?: string;
     audioUrl?: string;
     imgUrl?: string;
     model3D?: Model3D;

@@ -134,9 +134,10 @@ export interface MarkerGame {
     type: MarkerGameType,
     quizzes?: MarkerActionQuiz[],
     isQuizSolved?:boolean,
+    introText?: string
 }
 
-export type MarkerGameType = 'hunting-tions' | 'time-quiz'
+export type MarkerGameType = 'hitting-game' | 'time-quiz' | 'time-image-uploader' | 'audio-recorder-game'
 
 export interface UserOpinionSurvey {
     // order: number | null
