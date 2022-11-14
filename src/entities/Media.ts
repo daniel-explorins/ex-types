@@ -50,7 +50,8 @@ export interface MultiMediaItem {
     model3D?: Model3D;
     artist?: string;
     description?: string;
-    name?: string
+    name?: string,
+    metadata?: any
 }
 
 export interface MarkerIcon {

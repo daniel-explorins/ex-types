@@ -2,7 +2,7 @@ import { ModelCollection } from "./Model3D";
 import { PurchasePriceType, RouteObject, TaxType } from "./Route";
 import { User } from "./User";
 
-export type WorldTypeCode = 'routes' | 'products' | 'funding' | 'community' | 'partner' | 'nft' | 'info' | 'social-media' | 'universe-info' | 'marketboutique' | 'cube-gallery' | 'collection' | 'nft-store' | 'concept-lab' | 'ar-location' | 'quiz'  | 'donate' | 'events' | 'music-collection' | 'poap' | 'raffle' | 'raffle-ticket' | 'voice-recordings' | 'game-rewards'
+export type WorldTypeCode = 'routes' | 'products' | 'funding' | 'community' | 'partner' | 'nft' | 'info' | 'social-media' | 'universe-info' | 'marketboutique' | 'cube-gallery' | 'collection' | 'nft-store' | 'concept-lab' | 'ar-location' | 'quiz'  | 'donate' | 'events' | 'music-collection' | 'poap' | 'raffle' | 'raffle-ticket' | 'voice-recordings' | 'game-rewards' | 'qr-scanner'
 // export type UniverseWorldSection = RouteWorldSection
 
 export interface ThematicWorldType {
