@@ -45,13 +45,18 @@ export interface MultiMediaCollection {
 
 export interface MultiMediaItem {
     id?: string;
-    audioUrl?: string;
     imgUrl?: string;
     model3D?: Model3D;
     artist?: string;
     description?: string;
     name?: string,
     metadata?: any
+}
+
+export interface AudioItem extends MultiMediaItem {
+    audioUrl?: string;
+    audioType?: 'audio/mp3';
+    arrayBuffer?: ArrayBuffer;
 }
 
 export interface MarkerIcon {

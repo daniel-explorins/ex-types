@@ -50,7 +50,8 @@ export interface ThematicWorld {
   isFeatured: boolean,
   order?: number,
   backgroundImgUrl?: string,
-  logoUrl?: string | null
+  logoUrl?: string | null,
+  iconUrl?: string | null
 }
 
 export interface PartnerEntity {
