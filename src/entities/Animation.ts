@@ -17,5 +17,6 @@ export interface AnimationScene {
     animations: LottieAnimation[],
     title?: string,
     text?: any,
-    textBoxTitle?: string
+    textBoxTitle?: string,
+    backgroundImgUrl?:string,
 }

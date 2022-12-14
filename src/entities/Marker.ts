@@ -75,7 +75,8 @@ export interface MarkerReward {
 
 export interface RewardData {
     text?: RewardTextDataTranslated | RewardTextData;
-    name?: string
+    name?: string,
+    gameReward?: {imgUrl?: string}
 }
 
 export interface RewardTextDataTranslated {
