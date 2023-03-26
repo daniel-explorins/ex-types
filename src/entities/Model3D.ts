@@ -27,7 +27,7 @@ export interface Model3D {
     hotSpots?:Model3DHotSpot[],
     light?: string // ej. 'type: ambient; color: #CCC'
     position?: [number, number, number] // ej. [1, 1, 1]
-    scale?: string, // ej. '0.5 0.5 0.5'
+    scale?: [number, number, number], // ej. '0.5 0.5 0.5'
     rotation?: string // ej. '0 180 0'
     marketplaceUrl?: string,
     token?: TokenInfo,
@@ -58,5 +58,7 @@ export interface ModelCollection {
     iconUrl?:string,
     description?: string;
     conditions?: any
+    scale?: number,
+    position?: [number, number, number],
     // description2?: string;
 }
