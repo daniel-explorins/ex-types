@@ -41,7 +41,7 @@ export interface RouteMarker extends HasId {
     socialLinks?: SocialLinks;
     isActiveMarketplace?: boolean;
     gameScore?: number;
-    snapLenses?: SnapLense[]
+    snapLenses?: SnapLens[]
     // model3dIds?:string[];
 }
 
@@ -132,10 +132,10 @@ export interface MarkerAction {
     // snapCameraKit?: SnapCameraKit,
 }
 
-export interface SnapLense {
+export interface SnapLens {
     groupId: string;
     lenseId: string;
-    isGame: boolean;
+    isGame?: boolean;
     launchParams?: {[key: string]: string[]};
 }
 
