@@ -139,6 +139,16 @@ export interface SnapLens {
     launchParams?: {[key: string]: string[]};
 }
 
+export interface SnapchatLaunchParams {
+    titles?: string[],
+    descriptions?: string[],
+    interactionPlaceholderTexts?: string[],
+    extraTexts?: string[],
+    ctaTexts?: string[],
+    successReplyTexts?: string[],
+    interactionSolutionTexts?: string[],
+}
+
 export interface MarkerGame {
     // order: number | null
     type: MarkerGameType,
