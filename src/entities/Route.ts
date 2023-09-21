@@ -59,6 +59,7 @@ export interface RouteObject extends CRUD, HasId {
     onboarding?: any;
     routePackage?: RoutePackage;
     customMapId?: string;
+    isLanguageRestricted?: boolean;
 
     distance?: string; // ?
     season?: string; // ?
