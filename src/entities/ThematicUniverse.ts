@@ -60,7 +60,21 @@ export interface PartnerEntity {
     logoUrl: string,
     linkUrl: string | null,
     sloganString: string | null,
-    description: string | null
+    description: string | null,
+    lat?: number,
+    lon?: number,
+    adress?: string,
+    postalCode?: string,
+    category?: PartnerEntityCategory,
+    comment?: string,
+}
+
+export interface PartnerEntityCategory {
+    name: string
+    type: string,
+    iconUrl: string,
+    color: string,
+    id: number
 }
 export interface ThematicWorldSectionType {
     typeCode: WorldTypeCode
@@ -94,7 +108,10 @@ export interface ThematicWorldSection {
   title?: string,
   ctaLinkUrl?: string,
   ctaText?: string,
-  nftIds?: string
+  nftIds?: string,
+  customMapId?: string,
+  lat?: number,
+    lon?: number,
   // cubeImages?: CubeImage[]
   // models?: any
 }
