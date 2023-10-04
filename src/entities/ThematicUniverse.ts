@@ -63,7 +63,7 @@ export interface PartnerEntity {
     description: string | null,
     lat?: number,
     lon?: number,
-    adress?: string,
+    address?: string,
     postalCode?: string,
     category?: PartnerEntityCategory,
     comment?: string,
